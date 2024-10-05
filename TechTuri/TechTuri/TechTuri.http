@@ -1,0 +1,6 @@
+@TechTuri_HostAddress = http://localhost:5263
+
+GET {{TechTuri_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
