@@ -1,0 +1,46 @@
+https://erd.dbdesigner.net/designer/schema/guest_template
+
+Profile {
+	id integer pk increments unique
+	name varchar
+	username varchar unique
+	pwHash bit
+	pwSalt bit
+	joinDate date
+}
+
+Reviews {
+	id integer pk increments unique
+	stars integer(5) def(0)
+	comment varchar
+}
+
+Item {
+	id integer pk increments unique
+	category varchar
+	price integer
+	date date
+	description varchar
+	sold bool
+	location varchar
+	picture bit
+}
+
+ProfilexReview {
+	id integer pk increments unique
+	ProfileID integer > Profile.id
+	ReviewID integer > Reviews.id
+}
+
+ReviewxItem {
+	id integer pk increments unique
+	ReviewID integer > Reviews.id
+	ItemID integer > Item.id
+}
+
+ProfilexItem {
+	id integer pk increments unique
+	ProfileID integer > Profile.id
+	ItemID integer > Item.id
+}
+
