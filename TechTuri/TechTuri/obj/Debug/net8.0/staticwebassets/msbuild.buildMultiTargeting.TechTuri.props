@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TechTuri.props" />
+</Project>
