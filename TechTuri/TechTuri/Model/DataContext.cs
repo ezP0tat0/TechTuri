@@ -9,7 +9,7 @@ namespace TechTuri.Model
         public DbSet<Review> Reviews { get; set; }
         public DbSet<ProfilexItem> ProfileItemConnections { get; set; }
         public DbSet<ProfilexReview> ProfileReviewConnections { get; set; }
-        public DbSet<ReviewxItem> ReviewItemConnections { get; set; }
+        public DbSet<Picture> Pictures { get; set; }
 
         public DataContext(DbContextOptions options) : base(options) 
         {

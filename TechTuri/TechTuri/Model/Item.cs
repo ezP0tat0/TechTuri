@@ -8,8 +8,6 @@
         public string category { get; set; }
         public int price { get; set; }
         public bool sold { get; set; }
-        public DateTime date { get; set; }
-        //pics?
-        //location?
+        public DateTime date { get; set; } 
     }
 }

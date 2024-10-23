@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechTuri.Model;
 
@@ -10,9 +11,11 @@ using TechTuri.Model;
 namespace TechTuri.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241023133712_Pictures")]
+    partial class Pictures
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
@@ -73,13 +76,11 @@ namespace TechTuri.Migrations
                     b.Property<decimal>("fize")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.HasKey("id");
 
-                    b.ToTable("Pictures");
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("Picture");
                 });
 
             modelBuilder.Entity("TechTuri.Model.Profile", b =>
@@ -162,6 +163,37 @@ namespace TechTuri.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Reviews");
+                });
+
+            modelBuilder.Entity("TechTuri.Model.ReviewxItem", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ItemID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ReviewID")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("id");
+
+                    b.ToTable("ReviewItemConnections");
+                });
+
+            modelBuilder.Entity("TechTuri.Model.Picture", b =>
+                {
+                    b.HasOne("TechTuri.Model.Item", null)
+                        .WithMany("Pictures")
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TechTuri.Model.Item", b =>
+                {
+                    b.Navigation("Pictures");
                 });
 #pragma warning restore 612, 618
         }
