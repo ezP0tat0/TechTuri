@@ -127,3 +127,4 @@ C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\refi
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\TechTuri.pdb
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\TechTuri.genruntimeconfig.cache
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\ref\TechTuri.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\AutoMapper.dll

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4Ui7EdDEaPdo5R43gx5o5Asmb6U3s4DAzueLjIhAKmEOMKF/d4vgKFHUgilQWvjr+tZxSSrJCucZxvhF3PgtWQ==",
+  "dgSpecHash": "9eYCBh3QZ2Gp3Al96OrOfPKnXcjBMIgHqu2TL+iYRlJuvAJgI1ExmFLzU1rLeUzkjLKA0Tzn516UoqL338x4Nw==",
   "success": true,
   "projectFilePath": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\psely\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\psely\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\psely\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\psely\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

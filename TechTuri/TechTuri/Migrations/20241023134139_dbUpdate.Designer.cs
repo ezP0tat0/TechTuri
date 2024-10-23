@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechTuri.Model;
 
@@ -10,9 +11,11 @@ using TechTuri.Model;
 namespace TechTuri.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20241023134139_dbUpdate")]
+    partial class dbUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
@@ -71,10 +74,6 @@ namespace TechTuri.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("fize")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("title")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");

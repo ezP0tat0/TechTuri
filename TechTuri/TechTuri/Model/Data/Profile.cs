@@ -1,4 +1,4 @@
-﻿namespace TechTuri.Model
+﻿namespace TechTuri.Model.Data
 {
     public class Profile
     {
