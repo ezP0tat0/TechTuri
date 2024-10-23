@@ -20,4 +20,5 @@
         public string location { get; set; }
         public PictureDto picture { get; set; }
     }
+    
 }

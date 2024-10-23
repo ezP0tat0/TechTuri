@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TechTuri.Model.Data;
 
 namespace TechTuri.Model
 {

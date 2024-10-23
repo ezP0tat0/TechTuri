@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\dtos\\picturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\dtos\\picturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\profilexitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\profilexitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\profilexreview .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\profilexreview .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\profilexreview .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\profilexreview .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\profilexitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\profilexitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\data\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\model\\dtos\\picturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|solutionrelative:techturi\\model\\dtos\\picturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9B582AB-6603-4106-88BF-7F6C65E15420}|TechTuri\\TechTuri.csproj|c:\\users\\psely\\documents\\github\\techturi\\techturi\\techturi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,21 +66,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 316,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PictureDto.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Dtos\\PictureDto.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\Dtos\\PictureDto.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Dtos\\PictureDto.cs",
-              "RelativeToolTip": "TechTuri\\Model\\Dtos\\PictureDto.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T14:10:10.24Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -81,66 +76,156 @@
               "RelativeDocumentMoniker": "TechTuri\\Model\\Dtos\\ItemDto.cs",
               "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Dtos\\ItemDto.cs",
               "RelativeToolTip": "TechTuri\\Model\\Dtos\\ItemDto.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA1wBQAAAAvAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T14:04:01.981Z",
+              "WhenOpened": "2024-10-23T15:58:31.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\DataContext.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\DataContext.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\DataContext.cs",
+              "RelativeToolTip": "TechTuri\\Model\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:54:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Services\\ItemService.cs",
+              "RelativeToolTip": "TechTuri\\Services\\ItemService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:31:20.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\PagedResult.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\PagedResult.cs",
+              "RelativeToolTip": "TechTuri\\Model\\PagedResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:46.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Review.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\Review.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Review.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\Review.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:23.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfilexReview .cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\ProfilexReview .cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\ProfilexReview .cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\ProfilexReview .cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\ProfilexReview .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:20.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfilexItem.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\ProfilexItem.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\ProfilexItem.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\ProfilexItem.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\ProfilexItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:14.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Profile.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\Profile.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Profile.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\Profile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:03.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Picture.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Picture.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\Picture.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Picture.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\Picture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:19:01.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Item.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Data\\Item.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Data\\Item.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Data\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T15:18:41.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PictureDto.cs",
+              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Dtos\\PictureDto.cs",
+              "RelativeDocumentMoniker": "TechTuri\\Model\\Dtos\\PictureDto.cs",
+              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Dtos\\PictureDto.cs",
+              "RelativeToolTip": "TechTuri\\Model\\Dtos\\PictureDto.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T14:10:10.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "TechTuri\\Controllers\\ItemController.cs",
               "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Controllers\\ItemController.cs",
               "RelativeToolTip": "TechTuri\\Controllers\\ItemController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T13:47:09.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProfilexReview .cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\ProfilexReview .cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\ProfilexReview .cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\ProfilexReview .cs",
-              "RelativeToolTip": "TechTuri\\Model\\ProfilexReview .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T15:06:11.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProfilexItem.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\ProfilexItem.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\ProfilexItem.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\ProfilexItem.cs",
-              "RelativeToolTip": "TechTuri\\Model\\ProfilexItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T15:04:39.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Review.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\Review.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Review.cs",
-              "RelativeToolTip": "TechTuri\\Model\\Review.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T15:01:42.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\appsettings.json",
               "RelativeDocumentMoniker": "TechTuri\\appsettings.json",
@@ -148,38 +233,11 @@
               "RelativeToolTip": "TechTuri\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T14:52:35.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T14:52:35.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\DataContext.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\DataContext.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\DataContext.cs",
-              "RelativeToolTip": "TechTuri\\Model\\DataContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T14:46:39.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Profile.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\Profile.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Profile.cs",
-              "RelativeToolTip": "TechTuri\\Model\\Profile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T14:43:24.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Program.cs",
               "RelativeDocumentMoniker": "TechTuri\\Program.cs",
@@ -187,40 +245,7 @@
               "RelativeToolTip": "TechTuri\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T17:57:55.618Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 235,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Picture.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Picture.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\Picture.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Picture.cs",
-              "RelativeToolTip": "TechTuri\\Model\\Picture.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:23:55.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Item.cs",
-              "RelativeDocumentMoniker": "TechTuri\\Model\\Item.cs",
-              "ToolTip": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\Model\\Item.cs",
-              "RelativeToolTip": "TechTuri\\Model\\Item.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAuwAkAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T14:58:52.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T17:57:55.618Z"
             }
           ]
         }
