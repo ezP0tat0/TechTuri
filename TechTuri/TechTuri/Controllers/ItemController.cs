@@ -36,15 +36,23 @@ namespace TechTuri.Controllers
                 TotalPages= items.TotalPages,
                 Items=_mapper.Map<List<ItemDto>>(items.Items)
             };
-            return Ok(items);
+            return Ok(itemDtos);
         }
         [HttpGet("/{categ}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemSmallDto>))]
         public async Task<IActionResult> ItemsUnderCategory(int pageSize,int pageNumber,string categ)
         {
             PagedResult.CheckParameters(ref pageNumber,ref pageSize);
-
-            return Ok();
+            var items= await _itemService.GetItemsByCategory(pageNumber, pageSize, categ);
+            var itemSmallDtos = new PagedResult<ItemSmallDto>
+            {
+                CurrentPage = items.CurrentPage,
+                PageSize = items.PageSize,
+                TotalItems = items.TotalItems,
+                TotalPages = items.TotalPages,
+                Items = _mapper.Map<List<ItemSmallDto>>(items.Items)
+            };
+            return Ok(itemSmallDtos);
         }
 
 

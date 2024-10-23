@@ -8,6 +8,7 @@ namespace TechTuri.Services
     public interface IItemService
     {
         Task<PagedResult<Item>> GetItems(int pageNumber, int pageSize);
+        Task<PagedResult<Item>> GetItemsByCategory(int pageNumber, int pageSize,string cat);
     }
     public class ItemService: IItemService
     {
@@ -19,6 +20,12 @@ namespace TechTuri.Services
         public async Task<PagedResult<Item>> GetItems(int pageNumber,int pageSize)
         {
             var items = await _context.Items.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
+            var result = items.Create(await _context.Items.CountAsync(), pageNumber, pageSize);
+            return result;
+        }
+        public async Task<PagedResult<Item>> GetItemsByCategory(int pageNumber, int pageSize,string cat)
+        {
+            var items = await _context.Items.Where(x => x.category == cat).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
             var result = items.Create(await _context.Items.CountAsync(), pageNumber, pageSize);
             return result;
         }
