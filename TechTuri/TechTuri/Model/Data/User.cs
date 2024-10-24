@@ -8,5 +8,6 @@
         public DateTime joinDate { get; set; }
         public byte[] pwHash { get; set; }
         public byte[] pwSalt { get; set; }
+        public bool IsAdmin { get; set; }
     }
 }
