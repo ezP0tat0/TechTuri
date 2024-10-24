@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TechTuri.Services;
 using TechTuri.Model;
 using TechTuri.Model.Dtos;
+using TechTuri.Model.Data;
 using TechTuri.Mappers;
 
 namespace TechTuri.Controllers
@@ -28,8 +29,8 @@ namespace TechTuri.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterDto registerDto)
         {
-            Profile user = _mapper.Map<RegisterDto, Profile>(registerDto);
-            //_mapper.Map<RegisterDto, Profile>(registerDto);
+            User user = _mapper.Map<RegisterDto, User>(registerDto);
+            _mapper.Map<RegisterDto, User>(registerDto);
             await _authService.Register(user, registerDto.password);
             return Ok();
         }

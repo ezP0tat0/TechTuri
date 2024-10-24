@@ -128,3 +128,11 @@ C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\Tech
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\TechTuri.genruntimeconfig.cache
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\obj\Debug\net8.0\ref\TechTuri.dll
 C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\psely\Documents\GitHub\TechTuri\TechTuri\TechTuri\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

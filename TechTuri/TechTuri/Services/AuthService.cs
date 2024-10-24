@@ -12,9 +12,9 @@ namespace TechTuri.Services
 {
     public interface IAuthService
     {
-        Task Register(Profile user, string password);
+        Task Register(User user, string password);
         Task<AuthResponseDto> Login(LoginDto loginDto);
-        Task<Profile?> GetProfile();
+        Task<User?> GetProfile();
     }
     public class AuthService : IAuthService
     {
@@ -30,7 +30,7 @@ namespace TechTuri.Services
         }
         public async Task<AuthResponseDto> Login(LoginDto login)
         {
-            var profile = await _context.Profiles!.FirstOrDefaultAsync(x => x.username.Equals(login.username))
+            var profile = await _context.Users!.FirstOrDefaultAsync(x => x.username.Equals(login.username))
                     ?? throw new Exception("Rossz Felhasználónév vagy jelszó");
 
             if (VerifyPasswordHash(login.password, profile.pwHash!, profile.pwSalt!))
@@ -44,7 +44,7 @@ namespace TechTuri.Services
             }
             else throw new Exception("Rossz felhasználónév vagy jelszó");
         }
-        public async Task Register(Profile profile, string password)
+        public async Task Register(User profile, string password)
         {
             if (await ProfileExist(profile.username))
                 throw new Exception("Felhasználónév már foglalt");
@@ -53,17 +53,17 @@ namespace TechTuri.Services
             profile.pwHash = psHash;
             profile.pwSalt = pwSalt;
 
-            await _context.Profiles!.AddAsync(profile);
+            await _context.Users!.AddAsync(profile);
             await _context.SaveChangesAsync();
         }
 
         public async Task<bool> ProfileExist(string username)
         {
-            if (await _context.Profiles!.AnyAsync(x => x.username.Equals(username)))
+            if (await _context.Users!.AnyAsync(x => x.username.Equals(username)))
                 return true;
             return false;
         }
-        private string CreateToken(Profile user)
+        private string CreateToken(User user)
         {
             List<Claim> claims = new List<Claim>
             {
@@ -104,10 +104,10 @@ namespace TechTuri.Services
             }
         }
 
-        public Task<Profile?> GetProfile()
+        public Task<User?> GetProfile()
         {
             var username = _httpContext.HttpContext.User.FindFirst(ClaimTypes.Name)?.Value;
-            return _context.Profiles!.FirstOrDefaultAsync(x => x.username.Equals(username!));
+            return _context.Users!.FirstOrDefaultAsync(x => x.username.Equals(username!));
         }
     }
 }

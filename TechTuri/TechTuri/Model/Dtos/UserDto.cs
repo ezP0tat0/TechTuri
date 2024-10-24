@@ -1,14 +1,14 @@
 ﻿namespace TechTuri.Model.Dtos
 {
-    public class ProfileDto
+    public class UserDto
     {
         public string username { get; set; }
         public string password { get; set; }
     }
-    public class LoginDto : ProfileDto
+    public class LoginDto : UserDto
     {
     }
-    public class RegisterDto:ProfileDto
+    public class RegisterDto:UserDto
     {
         public string name { get; set; }
 

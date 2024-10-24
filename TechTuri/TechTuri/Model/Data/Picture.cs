@@ -9,7 +9,7 @@ namespace TechTuri.Model.Data
         public string description { get; set; }
         public string title { get; set; }
         public string fileExtension { get; set; }
-        public decimal fize { get; set; }
+        public decimal size { get; set; }
         [ForeignKey("ItemId")]
         public int ItemId { get; set; }
     }

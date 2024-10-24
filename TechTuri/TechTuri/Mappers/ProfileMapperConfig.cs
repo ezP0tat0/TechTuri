@@ -5,12 +5,12 @@ using TechTuri.Model.Dtos;
 
 namespace TechTuri.Mappers
 {
-    public class ProfileMapperConfig:AutoMapper.Profile
+    public class ProfileMapperConfig:Profile
     {
         public ProfileMapperConfig() 
         {
-            CreateMap<RegisterDto, TechTuri.Model.Data.Profile>()
-                .ForMember(dest=>dest.joinDate,opt=>opt.MapFrom(src=>(DateTime)src.joinDate));
+            CreateMap<RegisterDto, User>();
+         //       .ForMember(dest=>dest.joinDate,opt=>opt.MapFrom(src=>(DateTime)src.joinDate));
         }
     }
 }
