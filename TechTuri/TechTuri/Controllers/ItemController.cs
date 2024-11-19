@@ -54,6 +54,10 @@ namespace TechTuri.Controllers
             };
             return Ok(itemSmallDtos);
         }
+        public async Task<IActionResult> UploadItem()
+        {
+            return Ok();
+        }
 
 
 
