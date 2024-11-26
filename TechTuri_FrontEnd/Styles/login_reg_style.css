@@ -56,14 +56,14 @@ body {
     outline: none;
 }
 
-.login-form input[type="submit"] {
+.login-form input[type="button"] {
     background-color: #2eccc4;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.login-form input[type="submit"]:hover {
+.login-form input[type="button"]:hover {
     background-color: #27ae60;
 }
 
@@ -98,14 +98,14 @@ body {
     font-size: 16px;
 }
 
-.signup-form input[type="submit"] {
+.signup-form input[type="button"] {
     background-color: #e7473c;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.signup-form input[type="submit"]:hover {
+.signup-form input[type="button"]:hover {
     background-color: #2bc03f;
 }
 
