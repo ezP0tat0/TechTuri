@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using TechTuri.Model.Dtos;
 
 namespace TechTuri.Model.Data
 {
@@ -16,4 +17,6 @@ namespace TechTuri.Model.Data
         [ForeignKey("UserId")]
         public int UserId { get; set; }
     }
+
+    
 }
