@@ -121,6 +121,11 @@
         "IsRequired": false
       },
       {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "pictures",
         "Type": "System.Collections.Generic.List\u00601[[TechTuri.Model.Dtos.PictureDto, TechTuri, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
