@@ -9,7 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+
     <title>TechTuri</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -18,30 +21,26 @@
 </head>
 <body class="pt-3 text-center overflow-y-scroll"
       style="background-image: url(Images/MainBG.jpg); background-size : 100% auto">
-    <div id="main"
-         class="d-flex flex-column justify-content-around align-items-center p-3 rounded-5"
-         style="background-color: hsla(197, 100%, 84%, 0.85)">
+    <div class="main">
         <h1>TechTuri</h1>
 
         <p>
             Bejelentkezve mint <span id="profileData"></span>
         </p>
-        <p>
-            <button class="profileBtn" onclick="logout()">Profil megtekintése</button>
-            <button class="btn--logout" onclick="logout()">Kijelentkezés</button>
-            <button class="postItemBtn" onclick="logout()">Új hirdetés feladása</button>
-        </p>
-
-        <div class="main d-flex justify-content-center">
+        <div class="link">
+            <p>
+                <a href="profile.html">Profil megtekintése</a>
+                <a href="postItem.html">Új hirdetés feladása</a><br>
+                <a onclick="logout()" href="login.html">Kijelentkezés</a>
+            </p>
+        </div>
+        <div class="container">
             <div>
-                <h4>Eladó Tech cuccok</h4>
+                <h2>Eladó Tech cuccok</h2>
                 <div id="items" class="courses position-relative p-3 border border-dark"
-                     style="background-color: hsl(199, 100%, 80%)">
+                     style="background-color: hsl(200, 19%, 58%)">
                 </div>
             </div>
-        </div>
-        <button id="followedBtn" onclick="myCourses()">Követett Tech cuccok</button>
-        <div id="followed" class="courses position-relative p-3 border border-dark" style="background-color: hsl(199, 100%, 80%)">
         </div>
     </div>
 </body>
