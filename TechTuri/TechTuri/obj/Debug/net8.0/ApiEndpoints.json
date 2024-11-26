@@ -38,20 +38,15 @@
   {
     "ContainingType": "TechTuri.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "login",
+    "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "login",
+        "Type": "TechTuri.Model.Dtos.LoginDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -59,25 +54,15 @@
   {
     "ContainingType": "TechTuri.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "register",
+    "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "registerDto",
+        "Type": "TechTuri.Model.Dtos.RegisterDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

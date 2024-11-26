@@ -8,6 +8,8 @@ using TechTuri.Mappers;
 
 namespace TechTuri.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class AuthController : Controller
     {
         private readonly IAuthService _authService;

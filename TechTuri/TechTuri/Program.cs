@@ -17,7 +17,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSqlite<DataContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 
+
 var app = builder.Build();
+
+app.UseCors(x => x
+                           .AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
