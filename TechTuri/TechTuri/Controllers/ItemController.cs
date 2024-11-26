@@ -58,7 +58,7 @@ namespace TechTuri.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> UploadItem([FromForm]ItemDto item)
         {
-            ItemService.UploadItem(item);
+           // ItemService.UploadItem(item);
             return Ok();
         }
 
