@@ -20,6 +20,39 @@ async function login() {
     }
 }
 
+async function register() {
+    var uName = document.getElementById('uName').value;
+    var fullName = document.getElementById('fullName').value;
+    var password = document.getElementById('pw').value;
+    var confirmPassword = document.getElementById('pwAgain').value;
+
+    if (isEmpty(uName) || isEmpty(fullName) || isEmpty(password) || isEmpty(confirmPassword)) {
+        alert('Minden mező kitöltése kötelező!');
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert('A jelszavak nem egyeznek!');
+        return;
+    }
+
+    var data = {
+        uName: uName,
+        fullName: fullName,
+        password: password
+    };
+
+    await postData("auth/register", data, false)
+        .then(async (response) => {
+            if (response.success) {
+                alert('Sikeres regisztráció! Jelentkezzen be a folytatáshoz.');
+                window.location.href = "login.html";
+            } else {
+                alert(await response.message || 'Hiba történt a regisztráció során!');
+            }
+        });
+}
+
 function isEmpty(str) {
     return (!str || 0 === str.length);
 }
