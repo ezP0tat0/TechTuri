@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://localhost:6200/api/food/ws");
+const socket = new WebSocket("wss://localhost:7047/");
 
 socket.onopen = (event) => {
     //console.log("WebSocket connection established.");

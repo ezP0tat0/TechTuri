@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechTuri")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+784a2f267802a2736201b48b3c2926b07038b609")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4ee24b3be50f2c5b24aa644425b2f2e279cfe08")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechTuri")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechTuri")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

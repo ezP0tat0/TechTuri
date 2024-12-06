@@ -9,6 +9,7 @@ namespace TechTuri.Model
         public DbSet<Item> Items { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Picture> Pictures { get; set; }
+        public DbSet<img> imgs { get; set; }
 
         public DataContext(DbContextOptions options) : base(options) 
         {
