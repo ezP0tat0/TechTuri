@@ -17,6 +17,7 @@ namespace TechTuri.Mappers
         public MapppigProfile()
         {
             CreateMap<ItemDto, Item>();
+            CreateMap<Item, ItemDto>();
         }
     }
 }

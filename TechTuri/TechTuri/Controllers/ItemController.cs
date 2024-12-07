@@ -24,8 +24,8 @@ namespace TechTuri.Controllers
             _itemService = itemService;
         }
         [HttpGet("/items")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemDto>))]
-        public async Task<IActionResult> GetItems(int pageNumber, int pageSize)
+        //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemDto>))]
+        public async Task<IActionResult> GetItems()
         {
             //PagedResult.CheckParameters(ref pageNumber, ref pageSize);
             //var items = await _itemService.GetItems(pageNumber, pageSize);
@@ -39,24 +39,35 @@ namespace TechTuri.Controllers
             //};
             var items = await _itemService.GetItems();
 
-            return Ok(itemDtos);
+            return Ok(items);
         }
         [HttpGet("/{categ}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemSmallDto>))]
-        public async Task<IActionResult> ItemsUnderCategory(int pageSize, int pageNumber, string categ)
+        //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemSmallDto>))]
+        public async Task<IActionResult> ItemsUnderCategory(string categ)//int pageSize, int pageNumber,
         {
-            PagedResult.CheckParameters(ref pageNumber, ref pageSize);
-            var items = await _itemService.GetItemsByCategory(pageNumber, pageSize, categ);
-            var itemSmallDtos = new PagedResult<ItemSmallDto>
-            {
-                CurrentPage = items.CurrentPage,
-                PageSize = items.PageSize,
-                TotalItems = items.TotalItems,
-                TotalPages = items.TotalPages,
-                Items = _mapper.Map<List<ItemSmallDto>>(items.Items)
-            };
-            return Ok(itemSmallDtos);
+            // PagedResult.CheckParameters(ref pageNumber, ref pageSize);
+            var items = await _itemService.GetItemsByCategory(categ);
+            //var itemSmallDtos = new PagedResult<ItemSmallDto>
+            //{
+            //    CurrentPage = items.CurrentPage,
+            //    PageSize = items.PageSize,
+            //    TotalItems = items.TotalItems,
+            //    TotalPages = items.TotalPages,
+            //    Items = _mapper.Map<List<ItemSmallDto>>(items.Items)
+            //};
+            return Ok(items);
         }
+
+        [HttpGet("/item/{itemID}")]
+        public async Task<IActionResult> GetOneItem(int itemID)
+        {
+            var item=await _itemService.GetOneItem(itemID);
+            return Ok(item);
+        }
+
+
+
+
         [HttpPost("/UploadItem")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> UploadItem([FromForm] ItemDto item)
@@ -64,6 +75,7 @@ namespace TechTuri.Controllers
             await _itemService.UploadItem(item);
             return Ok();
         }
+
 
         //[HttpPost("/UploadImg")]
         //public async Task<IActionResult> UploadImg(IFormFile image)

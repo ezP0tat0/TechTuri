@@ -15,11 +15,12 @@
 
     public class ItemSmallDto
     {
+        public int id { get; set; }
         public string name { get; set; }
         public int price { get; set; }
        // public bool sold { get; set; }
         public string location { get; set; }
-        public IFormFile image { get; set; }
+        public string image { get; set; }
     }
     public class PictureDto
     {

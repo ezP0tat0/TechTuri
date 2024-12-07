@@ -8,13 +8,15 @@ using TechTuri.Mappers;
 using AutoMapper;
 using static System.Net.Mime.MediaTypeNames;
 using TechTuri.Migrations;
+using System.Reflection.Metadata.Ecma335;
 
 namespace TechTuri.Services
 {
     public interface IItemService
     {
-        Task<List<Item>> GetItems();  //PagedResult<Item>        int pageNumber, int pageSize
-        Task<List<Item>> GetItemsByCategory(string cat);//PagedResult<Item>        int pageNumber, int pageSize
+        Task<List<ItemSmallDto>> GetItems();  //PagedResult<Item>        int pageNumber, int pageSize
+        Task<List<ItemSmallDto>> GetItemsByCategory(string cat);//PagedResult<Item>        int pageNumber, int pageSize
+        Task<ItemDto> GetOneItem(int itemID);
         Task UploadItem(ItemDto item);
     }
     public class ItemService : IItemService
@@ -26,32 +28,57 @@ namespace TechTuri.Services
             _context = context;
             _mapper = mapper;
         }
-        public async Task<List<Item>> GetItems() //int pageNumber,int pageSize     PagedResult<Item>
+        public async Task<List<ItemSmallDto>> GetItems() //int pageNumber,int pageSize     PagedResult<Item>
         {
             var items = await _context.Items.ToListAsync();
             List<ItemSmallDto> result = new List<ItemSmallDto>();
             foreach (var item in items)
             {
+                var firstImg = await _context.Pictures.Where(x => x.id == item.id).FirstOrDefaultAsync();
                 result.Add(new ItemSmallDto()
                 {
+                    id = item.id,
                     name = item.name,
                     price = item.price,
                     location = item.location,
-                    //image = BytesToImg(await _context.Pictures.FirstOrDefaultAsync(x => x.ItemId == item.id))
+                    image = BytesToImg(firstImg.imgData)
                 });
             }
             //var items = await _context.Items.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
             //var result = items.Create(await _context.Items.CountAsync(), pageNumber, pageSize);
-            return items;
+            return result;
         }
-        public async Task<List<Item>> GetItemsByCategory(string cat)   //PagedResult<Item>   int pageNumber, int pageSize,
+        public async Task<List<ItemSmallDto>> GetItemsByCategory(string cat)   //PagedResult<Item>   int pageNumber, int pageSize,
         {
             var items = await _context.Items.Where(x => x.category.Equals(cat)).ToListAsync();
             //var items = await _context.Items.Where(x => x.category == cat).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
             //var result = items.Create(await _context.Items.CountAsync(), pageNumber, pageSize);
-            return items;
+
+            List<ItemSmallDto> result = new List<ItemSmallDto>();
+            foreach (var item in items)
+            {
+                var firstImg = await _context.Pictures.Where(x => x.id == item.id).FirstOrDefaultAsync();
+                result.Add(new ItemSmallDto()
+                {
+                    id = item.id,
+                    name = item.name,
+                    price = item.price,
+                    location = item.location,
+                    image = BytesToImg(firstImg.imgData) 
+                });
+            }
+
+            return result;
 
 
+        }
+        public async Task<ItemDto> GetOneItem(int itemID)
+        {
+            var it=await _context.Items.Where(x=>x.id == itemID).FirstOrDefaultAsync();
+            ItemDto item = new ItemDto();
+            _mapper.Map(it, item); //lehet lesz baj
+
+            return item;
         }
         public async Task UploadItem(ItemDto item)
         {
