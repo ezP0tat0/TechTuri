@@ -23,20 +23,22 @@ namespace TechTuri.Controllers
             _mapper = mapper;
             _itemService = itemService;
         }
-        [HttpGet]
+        [HttpGet("/items")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemDto>))]
         public async Task<IActionResult> GetItems(int pageNumber, int pageSize)
         {
-            PagedResult.CheckParameters(ref pageNumber, ref pageSize);
-            var items = await _itemService.GetItems(pageNumber, pageSize);
-            var itemDtos = new PagedResult<ItemDto>
-            {
-                CurrentPage = items.CurrentPage,
-                PageSize = items.PageSize,
-                TotalItems = items.TotalItems,
-                TotalPages = items.TotalPages,
-                Items = _mapper.Map<List<ItemDto>>(items.Items)
-            };
+            //PagedResult.CheckParameters(ref pageNumber, ref pageSize);
+            //var items = await _itemService.GetItems(pageNumber, pageSize);
+            //var itemDtos = new PagedResult<ItemDto>
+            //{
+            //    CurrentPage = items.CurrentPage,
+            //    PageSize = items.PageSize,
+            //    TotalItems = items.TotalItems,
+            //    TotalPages = items.TotalPages,
+            //    Items = _mapper.Map<List<ItemDto>>(items.Items)
+            //};
+            var items = await _itemService.GetItems();
+
             return Ok(itemDtos);
         }
         [HttpGet("/{categ}")]
