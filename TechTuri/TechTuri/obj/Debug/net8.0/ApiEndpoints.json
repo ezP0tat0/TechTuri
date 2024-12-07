@@ -69,22 +69,6 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
-    "Method": "UploadImg",
-    "RelativePath": "UploadImg",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TechTuri.Controllers.ItemController",
     "Method": "UploadItem",
     "RelativePath": "UploadItem",
     "HttpMethod": "POST",

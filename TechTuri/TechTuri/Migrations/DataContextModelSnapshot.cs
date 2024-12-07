@@ -66,20 +66,9 @@ namespace TechTuri.Migrations
                     b.Property<int>("ItemId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<byte[]>("bytes")
+                    b.Property<byte[]>("imgData")
                         .IsRequired()
                         .HasColumnType("BLOB");
-
-                    b.Property<string>("fileExtension")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("size")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.HasKey("id");
 
@@ -138,21 +127,6 @@ namespace TechTuri.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("TechTuri.Model.Data.img", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<byte[]>("imgData")
-                        .IsRequired()
-                        .HasColumnType("BLOB");
-
-                    b.HasKey("id");
-
-                    b.ToTable("imgs");
                 });
 #pragma warning restore 612, 618
         }

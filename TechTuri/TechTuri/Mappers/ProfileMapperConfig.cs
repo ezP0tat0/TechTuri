@@ -10,7 +10,13 @@ namespace TechTuri.Mappers
         public ProfileMapperConfig() 
         {
             CreateMap<RegisterDto, User>();
-         //       .ForMember(dest=>dest.joinDate,opt=>opt.MapFrom(src=>(DateTime)src.joinDate));
+        }
+    }
+    public class MapppigProfile : Profile
+    {
+        public MapppigProfile()
+        {
+            CreateMap<ItemDto, Item>();
         }
     }
 }

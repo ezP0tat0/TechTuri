@@ -12,6 +12,7 @@ namespace TechTuri.Model.Data
         public int price { get; set; }
         public string condition { get; set; }
         public DateTime date { get; set; }
+        
         public string location { get; set; }
 
         [ForeignKey("UserId")]

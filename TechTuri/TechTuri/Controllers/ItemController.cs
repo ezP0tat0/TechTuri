@@ -59,37 +59,37 @@ namespace TechTuri.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> UploadItem([FromForm] ItemDto item)
         {
-            // ItemService.UploadItem(item);
+            await _itemService.UploadItem(item);
             return Ok();
         }
 
-        [HttpPost("/UploadImg")]
-        public async Task<IActionResult> UploadImg(IFormFile image)
-        {
-            if (image == null || image.Length == 0)
-            {
-                return BadRequest("No file selected.");
-            }
+        //[HttpPost("/UploadImg")]
+        //public async Task<IActionResult> UploadImg(IFormFile image)
+        //{
+        //    if (image == null || image.Length == 0)
+        //    {
+        //        return BadRequest("No file selected.");
+        //    }
 
-            byte[] imgBytes;
+        //    byte[] imgBytes;
 
-            using (var memoryStream = new MemoryStream())
-            {
-                await image.CopyToAsync(memoryStream);
-                imgBytes = memoryStream.ToArray();
-            }
-            img im = new img()
-            {
-                id = 1,
-                imgData = imgBytes
-            };
-            await _context.imgs.AddAsync(im);
-            await _context.SaveChangesAsync();
+        //    using (var memoryStream = new MemoryStream())
+        //    {
+        //        await image.CopyToAsync(memoryStream);
+        //        imgBytes = memoryStream.ToArray();
+        //    }
+        //    img im = new img()
+        //    {
+        //        id = 1,
+        //        imgData = imgBytes
+        //    };
+        //    await _context.imgs.AddAsync(im);
+        //    await _context.SaveChangesAsync();
 
 
 
-                return Ok();
-        }
+        //        return Ok();
+        //}
 
 
 

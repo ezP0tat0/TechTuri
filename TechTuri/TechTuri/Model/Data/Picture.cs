@@ -4,12 +4,9 @@ namespace TechTuri.Model.Data
 {
     public class Picture
     {
-        public int id { get;set; }
-        public byte[] bytes { get; set; }
-        //public string description { get; set; }
-        public string title { get; set; }
-        public string fileExtension { get; set; }
-        public decimal size { get; set; }
+        public int id { get; set; }
+        public byte[] imgData { get; set; }
+
         [ForeignKey("ItemId")]
         public int ItemId { get; set; }
     }

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using TechTuri.Mappers;
 using TechTuri.Model;
 using TechTuri.Services;
 
@@ -11,6 +12,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IAuthService,AuthService>();
 builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
