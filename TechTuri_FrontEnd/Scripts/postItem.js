@@ -36,7 +36,7 @@ async function postItem()
         username: userData.username,
         pictures: pictures
     };
-    await postData("/UploadItem", data, false)
+    await postData("UploadItem", data, false)
         .then(async (response) => {
             if (response.success) {
                 alert('Sikeres hirdetés feladás!');

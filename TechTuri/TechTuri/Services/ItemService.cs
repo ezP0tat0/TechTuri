@@ -105,8 +105,6 @@ namespace TechTuri.Services
             {
                 foreach (var picture in pictureList)
                 {
-                    
-
                    
                     Picture p = new Picture()
                     {
