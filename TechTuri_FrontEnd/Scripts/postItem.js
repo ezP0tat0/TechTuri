@@ -6,11 +6,11 @@ async function postItem()
     var itemName = document.getElementById('itemName').value;
     var price = document.getElementById('price').value;
     var address = document.getElementById('address').value;
-    var categories = document.getElementsByName('category').value;
-    var conds = document.getElementsByName('cond').value;
+    var categories = document.getElementsByName('category');
+    var conds = document.getElementsByName('cond');
     var desc = document.getElementById('itemDesc').value;
     var pictures = document.getElementById('pictures').value;
-    for (var i = 0, length = categories.length; i < length; i++) {
+    for (var i = 0; i < categories.length; i++) {
         if (categories[i].checked) {
           var category = categories[i].value;
           break;
@@ -33,10 +33,10 @@ async function postItem()
         category: category,
         condition: cond,
         location: address,
-        userId: userData.username,
+        username: userData.username,
         pictures: pictures
     };
-    await postData("/UploadItem", data, false)
+    await postData("UploadItem", data, false)
         .then(async (response) => {
             if (response.success) {
                 alert('Sikeres hirdetés feladás!');
@@ -46,3 +46,6 @@ async function postItem()
             }
         });
  }
+ function isEmpty(str) {
+    return (!str || 0 === str.length);
+}

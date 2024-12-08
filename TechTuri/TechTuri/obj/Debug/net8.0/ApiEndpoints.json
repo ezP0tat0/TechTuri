@@ -112,7 +112,7 @@
         "IsRequired": false
       },
       {
-        "Name": "userId",
+        "Name": "username",
         "Type": "System.Int32",
         "IsRequired": false
       },
