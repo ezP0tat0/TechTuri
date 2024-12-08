@@ -91,24 +91,24 @@ button {
     transition: background-color 0.3s ease;
 }
 
-.item-form input[type="button"] {
+.form input[type="button"] {
     background-color: #2eccc4;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.item-form input[type="button"]:hover {
+.form input[type="button"]:hover {
     background-color: #27ae60;
 }
 
-.item-form input[type="text"],
-.item-form textarea{
+.form input[type="text"],
+.form textarea{
     background-color: #ecf0f1;
     color: #333;
 }
 
-.item-form input[type="text"]:focus,
-.item-form textarea:focus{
+.form input[type="text"]:focus,
+.form textarea:focus{
     background-color: #d5dbdb;
 }

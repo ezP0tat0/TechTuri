@@ -6,7 +6,7 @@
     <script src="Scripts/main.js"></script>
     <script src="Scripts/api.js"></script>
     <!-- <script src="Scripts/webSocket.js"></script> -->
-    <script src="Scripts/main.js"></script>
+    <script src="Scripts/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
@@ -26,16 +26,30 @@
         <p>
             Bejelentkezve mint <span id="profileData"></span>
         </p>
-        <div>
+        <div class="container">
             <div>
-                <h4>Profil adatok</h4>
-                <div id="profile" class="courses position-relative p-3 border border-dark"
-                     style="background-color: hsl(199, 100%, 80%)">
+                <h4 style="color: aliceblue;">Profil adatok</h4>
+                <div id="profile" class="container">
+                    <p style="color: aliceblue;">Felhasználónév: <span id="uName"></span></p>
+                    <p style="color: aliceblue;">Teljes név: <span id="fullName"></span></p>
+                    <p style="color: aliceblue;">Regisztráció ideje: <span id="regDate"></span></p>
                 </div>
+                <h4 style="color: aliceblue;">Módosítható adatok:</h4><br>
+                <form class="form">
+                    <label for="editUName">Felhasználónév: </label>
+                    <input type="text" id="editUName" name="editUName" placeholder="Felhasználónév" size="30"><br><br>
+                    <label for="editName">Teljes név: </label>
+                    <input type="text" id="editName" name="editName" placeholder="Teljes név" size="30"><br><br>
+                    <label for="editPw">Jelszó: </label>
+                    <input type="password" id="editPw" name="editPw" placeholder="Jelszó" size="30"><br><br>
+                    <label for="editPw">Jelszó megint: </label>
+                    <input type="password" id="editPw" name="editPw" placeholder="Jelszó megint" size="30"><br><br>
+                </form>
+                <p style="color: aliceblue;">Jelszó módosításakor a 'Jelszó megint' mező kitöltése kötelező!</span></p>
             </div>
         </div>
         <div class="link">
-            <p><a id="profileEdit" href="profile.html">Szerkesztés mentése</a></p>
+            <p><a onclick="editProfile()" href="profile.html">Szerkesztés mentése</a></p>
             <p><a href="profile.html">Szerkesztés elvetése</a></p><br>
         </div>
     </div>
