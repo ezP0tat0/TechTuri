@@ -114,8 +114,7 @@
               "RelativeToolTip": "TechTuri\\WebSocket\\chatRoomHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:59:14.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:59:14.267Z"
             },
             {
               "$type": "Document",
@@ -127,8 +126,7 @@
               "RelativeToolTip": "TechTuri\\WebSocket\\ConnectionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:56:03.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:56:03.932Z"
             },
             {
               "$type": "Document",
@@ -153,8 +151,7 @@
               "RelativeToolTip": "TechTuri\\WebSocket\\WebSocketManagerMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:55:49.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:55:49.676Z"
             },
             {
               "$type": "Document",
@@ -166,8 +163,7 @@
               "RelativeToolTip": "TechTuri\\WebSocket\\WebSocketHandler.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:55:07.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:55:07.154Z"
             },
             {
               "$type": "Document",
@@ -179,8 +175,7 @@
               "RelativeToolTip": "TechTuri\\Mappers\\ProfileMapperConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T14:33:16.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T14:33:16.213Z"
             },
             {
               "$type": "Document",
@@ -192,8 +187,7 @@
               "RelativeToolTip": "TechTuri\\Migrations\\20241207143002_uploadItem.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T14:30:02.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T14:30:02.971Z"
             },
             {
               "$type": "Document",
@@ -205,8 +199,7 @@
               "RelativeToolTip": "TechTuri\\Model\\Dtos\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:57:05.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T15:57:05.582Z"
             },
             {
               "$type": "Document",
@@ -218,8 +211,7 @@
               "RelativeToolTip": "TechTuri\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:15:38.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:15:38.087Z"
             },
             {
               "$type": "Document",
@@ -231,8 +223,7 @@
               "RelativeToolTip": "TechTuri\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-19T14:08:52.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:08:52.601Z"
             },
             {
               "$type": "Document",
@@ -244,8 +235,7 @@
               "RelativeToolTip": "TechTuri\\Services\\AuthService.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAmwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:01:54.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:01:54.911Z"
             },
             {
               "$type": "Document",
@@ -257,8 +247,7 @@
               "RelativeToolTip": "TechTuri\\Controllers\\AuthController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:44:30.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T16:44:30.372Z"
             },
             {
               "$type": "Document",
@@ -270,8 +259,7 @@
               "RelativeToolTip": "TechTuri\\Model\\DataContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:54:37.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:54:37.51Z"
             },
             {
               "$type": "Document",
@@ -283,8 +271,7 @@
               "RelativeToolTip": "TechTuri\\Model\\PagedResult.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA6wAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:19:46.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:19:46.773Z"
             },
             {
               "$type": "Document",
@@ -296,8 +283,7 @@
               "RelativeToolTip": "TechTuri\\Model\\Data\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:19:23.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:19:23.913Z"
             },
             {
               "$type": "Document",
@@ -309,8 +295,7 @@
               "RelativeToolTip": "TechTuri\\Model\\Data\\Picture.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:19:01.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:19:01.12Z"
             },
             {
               "$type": "Document",
@@ -322,8 +307,7 @@
               "RelativeToolTip": "TechTuri\\Model\\Data\\Item.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:18:41.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:18:41.528Z"
             },
             {
               "$type": "Document",
@@ -335,8 +319,7 @@
               "RelativeToolTip": "TechTuri\\Controllers\\ItemController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwDUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T13:47:09.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T13:47:09.38Z"
             },
             {
               "$type": "Document",
@@ -348,8 +331,7 @@
               "RelativeToolTip": "TechTuri\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-06T14:52:35.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T14:52:35.921Z"
             },
             {
               "$type": "Document",
@@ -361,8 +343,7 @@
               "RelativeToolTip": "TechTuri\\Program.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T17:57:55.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T17:57:55.618Z"
             },
             {
               "$type": "Document",
@@ -374,8 +355,7 @@
               "RelativeToolTip": "TechTuri\\Model\\Dtos\\ItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T15:58:31.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:58:31.739Z"
             },
             {
               "$type": "Document",
@@ -387,8 +367,7 @@
               "RelativeToolTip": "TechTuri\\Services\\ItemService.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAgwE4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:45:33.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T16:45:33.666Z"
             }
           ]
         }
