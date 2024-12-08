@@ -54,7 +54,7 @@ body {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
     to {
-        box-shadow: 0 0 20px rgba(122, 206, 167, 0.856);
+        box-shadow: 0 0 20px rgba(122, 206, 195, 0.856);
     }
 }
 
@@ -89,4 +89,26 @@ button {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.item-form input[type="button"] {
+    background-color: #2eccc4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-form input[type="button"]:hover {
+    background-color: #27ae60;
+}
+
+.item-form input[type="text"],
+.item-form textarea{
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.item-form input[type="text"]:focus,
+.item-form textarea:focus{
+    background-color: #d5dbdb;
 }

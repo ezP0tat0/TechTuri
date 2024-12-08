@@ -6,6 +6,7 @@
     <script src="Scripts/main.js"></script>
     <script src="Scripts/api.js"></script>
     <!--<script src="Scripts/webSocket.js"></script>-->
+    <script src="Scripts/postItem.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
@@ -19,16 +20,14 @@
           crossorigin="anonymous" />
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
-<body class="pt-3 text-center overflow-y-scroll"
-      style="background-image: url(Images/MainBG.jpg); background-size : 100% auto">
+<body style="background-image: url(Images/MainBG.jpg); background-size : 100% auto">
     <div class="main">
-        
         <div class="link">
             <p><a href="index.html">Vissza a főoldalra</a></p><br>
         </div>
         <div class="container">
             <h2>HIRDETÉS FELADÁSA</h2>
-            <form action="/UploadImg" method="post" enctype="multipart/form-data">
+            <form class="item-form">
                 <label for="itemName">Termék megnevezése:</label><br>
                 <input type="text" id="itemName" name="itemName" placeholder="AtomZ MTK9999 videókártya" size="40"><br>
                 <label for="price">Termék ára:</label><br>
@@ -66,15 +65,9 @@
                 <label for="itemDesc">Leírás:</label><br>
                 <textarea id="itemDesc" name="itemDesc" rows="15" cols="120" placeholder="Ide írja a termék leírását. Ne maradjon el az elérhetőség sem!"></textarea><br>
                  <br><p style="color: aliceblue;">Képek:</p>
-                <input type="file" id="picture1" name="picture1" value="picture1"><br>
-                <input type="file" id="picture2" name="picture2" value="picture2"><br>
-                <input type="file" id="picture3" name="picture3" value="picture3"><br>
-                <input type="file" id="picture4" name="picture4" value="picture4"><br>
-                <input type="file" id="picture5" name="picture5" value="picture5"><br>
-                <br><br>--------------------<br>
-                <input  name="image" accept="image/*" type="file" multiple />
-                <br><br>--------------------<br>
-                <input type="submit" value="Hirdetés feladás">
+                <input type="file" id="pictures" name="pictures" value="picture1" multiple>
+                <hr>
+                <input type="button" id="submit" value="Hirdetés feladása" onclick="postItem()">
             </form>
         </div>
     </div>

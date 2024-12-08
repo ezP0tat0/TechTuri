@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="Scripts/main.js"></script>
     <script src="Scripts/api.js"></script>
-    <script src="Scripts/webSocket.js"></script>
+    <!-- <script src="Scripts/webSocket.js"></script> -->
+    <script src="Scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
@@ -19,11 +20,9 @@
           crossorigin="anonymous" />
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
-<body class="pt-3 text-center overflow-y-scroll"
-      style="background-image: url(Images/ProfileBG.jpeg); background-size : 100% auto">
+<body style="background-image: url(Images/ProfileBG.jpeg); background-size : 100% auto">
     <div class="main">
         <h1>TechTuri</h1>
-
         <p>
             Bejelentkezve mint <span id="profileData"></span>
         </p>
@@ -35,10 +34,10 @@
                 </div>
             </div>
         </div>
-        <p>
-            <button class="profileEditSaveBtn" onclick="logout()">Profiladatok mentése</button>
-            <button class="profileEditCancelBtn" onclick="logout()">Szerkesztés elvetése</button>
-        </p>
+        <div class="link">
+            <p><a id="profileEdit" href="profile.html">Szerkesztés mentése</a></p>
+            <p><a href="profile.html">Szerkesztés elvetése</a></p><br>
+        </div>
     </div>
 </body>
 </html>
