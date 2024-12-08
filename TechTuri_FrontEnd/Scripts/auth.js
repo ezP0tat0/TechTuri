@@ -1,3 +1,8 @@
+window.onload=function()
+{
+	localStorage.clear();
+}
+
 async function login() {
     var uName = document.getElementById('uName').value;
     var password = document.getElementById('pw').value;
