@@ -70,7 +70,7 @@ namespace TechTuri.Controllers
 
         [HttpPost("/UploadItem")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IActionResult> UploadItem([FromForm] ItemDto item)
+        public async Task<IActionResult> UploadItem(ItemDto item)
         {
             await _itemService.UploadItem(item);
             return Ok();

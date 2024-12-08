@@ -82,9 +82,19 @@ namespace TechTuri.Services
         }
         public async Task UploadItem(ItemDto item)
         {
-            Item i = new Item();
-            _mapper.Map(item, i);
-            i.date = DateTime.Now;
+            var uId = await _context.Users.Where(x=>x.username.Equals(item.username)).FirstOrDefaultAsync();
+            Item i = new Item()
+            {
+                name = item.name,
+                description = item.description,
+                category = item.category,
+                date = DateTime.Now,
+                price = item.price,
+                condition = item.condition,
+                location = item.location,
+                UserId =  uId.id
+            };
+            //_mapper.Map(item, i);
             await _context.Items.AddAsync(i);
             await _context.SaveChangesAsync();
 
