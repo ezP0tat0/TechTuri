@@ -34,9 +34,8 @@ function logout()
  }
  async function showItems() {
     var div = document.getElementById("items");
-
     try {
-        const data = await getData("item");
+        const data = await getData("items");
         console.log(data);
         div.innerHTML = createList(data);
     } catch (error) {
