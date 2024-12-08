@@ -19,24 +19,23 @@
           crossorigin="anonymous" />
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
-<body class="pt-3 text-center overflow-y-scroll"
-      style="background-image: url(Images/ProfileBG.jpeg); background-size : 100% auto">
+<body style="background-image: url(Images/ProfileBG.jpeg); background-size : 100% auto">
     <div class="main">
         <h1>TechTuri</h1>
-
         <p>
             Bejelentkezve mint <span id="profileData"></span>
         </p>
-        <p>
-            <button class="homeBtn" onclick="logout()">Vissza a főoldalra</button>
-            <button class="profileEditBtn" onclick="logout()">Profil szerkesztése</button>
-        </p>
-
+        <div class="link">
+            <p><a href="index.html">Vissza a főoldalra</a>
+            <a href="profileEdit.html">Profil szerkesztése</a></p><br>
+        </div>
         <div>
             <div>
                 <h4>Profil adatok</h4>
-                <div id="profile" class="courses position-relative p-3 border border-dark"
-                     style="background-color: hsl(199, 100%, 80%)">
+                <div id="profile" class="container">
+                    <p style="color: aliceblue;">Felhasználónév: <span id="uName"></span></p>
+                    <p style="color: aliceblue;">Teljes név: <span id="fullName"></span></p>
+                    <p style="color: aliceblue;">Regisztráció ideje: <span id="regDate"></span></p>
                 </div>
             </div>
         </div>

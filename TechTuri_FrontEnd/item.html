@@ -19,22 +19,20 @@
           crossorigin="anonymous" />
     <link rel="stylesheet" href="./Styles/style.css" />
 </head>
-<body class="pt-3 text-center overflow-y-scroll"
-      style="background-image: url(Images/MainBG.jpg); background-size : 100% auto">
+<body style="background-image: url(Images/MainBG.jpg); background-size : 100% auto">
     <div class="main">
-        <p>
-            <button class="homeBtn" onclick="logout()">Vissza a főoldalra</button>
-        </p>
-
+        <div class="link">
+            <p><a href="index.html">Vissza a főoldalra</a></p><br>
+        </div>
         <div>
-                <div id="items" class="courses position-relative p-3 border border-dark"
-                     style="background-color: hsl(199, 100%, 80%)">
-                     <div id="pictures"></div>
-                     <div id="itemName"></div>
-                     <div>Ár: <span id="price"></span></div>
-                     <div>Kategória: <span id="category"></span></div>
-                     <div>Hely: <span id="address"></span></div>
-                     <div>Leírás: <span id="itemDesc"></span></div>
+                <div id="items" class="container">
+                    <div id="itemName"></div>
+                    <p style="color: aliceblue;">Ár: <span id="price"></span></p>
+                    <p style="color: aliceblue;">Hely: <span id="address"></span></p>
+                    <p style="color: aliceblue;">Kategória: <span id="category"></span></p>
+                    <p style="color: aliceblue;">Állapot: <span id="condition"></span></p>
+                    <p style="color: aliceblue;">Leírás: <span id="itemDesc"></span></p>
+                    <div id="pictures"></div>
                 </div>
         </div>
     </div>
