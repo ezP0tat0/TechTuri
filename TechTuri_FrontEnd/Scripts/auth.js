@@ -10,10 +10,10 @@ async function login() {
         alert('Felhasználónév és jelszó megadása kötelező!');
     } else {
         var data = {
-            uName: uName,
+            username: uName,
             password: password
         };
-        await postData("auth/login", data, false)
+        await postData("Auth/login", data, false)
             .then(async (data) => {
                 if (await data.token) {
                     localStorage.setItem("data", JSON.stringify(data));
@@ -40,14 +40,14 @@ async function register() {
         alert('A jelszavak nem egyeznek!');
         return;
     }
-
     var data = {
-        uName: uName,
-        fullName: fullName,
-        password: password
+        username: uName,
+        password: password,
+        name: fullName
     };
+    console.log(data);
 
-    await postData("auth/register", data, false)
+    await postData("Auth/register", data, false)
         .then(async (response) => {
             if (response.success) {
                 alert('Sikeres regisztráció! Jelentkezzen be a folytatáshoz.');

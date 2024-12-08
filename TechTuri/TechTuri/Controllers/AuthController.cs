@@ -34,7 +34,7 @@ namespace TechTuri.Controllers
             User user = _mapper.Map<RegisterDto, User>(registerDto);
             _mapper.Map<RegisterDto, User>(registerDto);
             await _authService.Register(user, registerDto.password);
-            return Ok();
+            return Ok("");
         }
     }
 }

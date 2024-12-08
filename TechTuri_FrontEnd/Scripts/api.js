@@ -15,6 +15,7 @@ async function postData(url = "", data = {}, needAuth = true) {
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         body: testJSON(data) ? data : JSON.stringify(data), // body data type must match "Content-Type" header
     });
+    console.log(response);
     if (response.status === 401 || response.status === 403) {
         logout();
     }
