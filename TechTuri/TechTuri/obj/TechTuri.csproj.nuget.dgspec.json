@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj": {}
+    "C:\\Users\\BEN\\OneDrive\\Uni\\ProjektLabor\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj": {}
   },
   "projects": {
-    "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj": {
+    "C:\\Users\\BEN\\OneDrive\\Uni\\ProjektLabor\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj",
+        "projectUniqueName": "C:\\Users\\BEN\\OneDrive\\Uni\\ProjektLabor\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj",
         "projectName": "TechTuri",
-        "projectPath": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj",
-        "packagesPath": "C:\\Users\\psely\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\psely\\Documents\\GitHub\\TechTuri\\TechTuri\\TechTuri\\obj\\",
+        "projectPath": "C:\\Users\\BEN\\OneDrive\\Uni\\ProjektLabor\\TechTuri\\TechTuri\\TechTuri\\TechTuri.csproj",
+        "packagesPath": "C:\\Users\\BEN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BEN\\OneDrive\\Uni\\ProjektLabor\\TechTuri\\TechTuri\\TechTuri\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\psely\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -100,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

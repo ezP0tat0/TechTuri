@@ -1,4 +1,4 @@
-var defaultUrl = "https://localhost:7047/api/";
+var defaultUrl = "http://localhost:5263/api/";
 
 async function postData(url = "", data = {}, needAuth = true) {
     // Default options are marked with *
