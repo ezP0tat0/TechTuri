@@ -67,7 +67,38 @@
         }
       }
     },
-    "/items": {
+    "/api/Item/upload": {
+      "post": {
+        "tags": [
+          "Item"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Item": {
       "get": {
         "tags": [
           "Item"
@@ -79,7 +110,7 @@
         }
       }
     },
-    "/{categ}": {
+    "/api/Item/categ/{categ}": {
       "get": {
         "tags": [
           "Item"
@@ -101,7 +132,7 @@
         }
       }
     },
-    "/item/{itemID}": {
+    "/api/Item/{itemID}": {
       "get": {
         "tags": [
           "Item"
@@ -123,88 +154,51 @@
           }
         }
       }
-    },
-    "/UploadItem": {
-      "post": {
-        "tags": [
-          "Item"
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  },
-                  "price": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "category": {
-                    "type": "string"
-                  },
-                  "condition": {
-                    "type": "string"
-                  },
-                  "location": {
-                    "type": "string"
-                  },
-                  "userId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "pictures": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/PictureDto"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "name": {
-                  "style": "form"
-                },
-                "description": {
-                  "style": "form"
-                },
-                "price": {
-                  "style": "form"
-                },
-                "category": {
-                  "style": "form"
-                },
-                "condition": {
-                  "style": "form"
-                },
-                "location": {
-                  "style": "form"
-                },
-                "userId": {
-                  "style": "form"
-                },
-                "pictures": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
     }
   },
   "components": {
     "schemas": {
+      "ItemDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "condition": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pictures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PictureDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDto": {
         "type": "object",
         "properties": {
