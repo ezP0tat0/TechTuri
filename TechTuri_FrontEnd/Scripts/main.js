@@ -33,10 +33,10 @@ function logout()
     }
  }
  async function showItems() {
-    var div = document.getElementById("courses");
+    var div = document.getElementById("items");
 
     try {
-        const data = await getData("course");
+        const data = await getData("item");
         console.log(data);
         div.innerHTML = createList(data);
     } catch (error) {
