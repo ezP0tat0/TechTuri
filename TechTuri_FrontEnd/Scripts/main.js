@@ -17,7 +17,7 @@ function displayUserInfo()
     if(user)
     {
         document.getElementById("profileData").innerHTML=
-        `</br>${userData.name} </br>`;
+        `</br>${userData.username} </br>`;
     } 
 }
 function logout()
