@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Net.WebSockets;
 
-namespace FoodOrder.Core.WebSocket
+namespace TechTuri.WebSocket
 {
     public class ConnectionManager
     {

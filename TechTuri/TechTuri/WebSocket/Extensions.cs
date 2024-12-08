@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace FoodOrder.Core.WebSocket
+namespace TechTuri.WebSocket
 {
     public static class Extensions
     {
@@ -24,6 +24,8 @@ namespace FoodOrder.Core.WebSocket
                     services.AddSingleton(type);
                 }
             }
+
+           // services.AddSingleton<chatRoomHandler>();
 
             return services;
         }

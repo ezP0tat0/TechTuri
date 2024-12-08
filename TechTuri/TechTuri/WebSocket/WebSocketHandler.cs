@@ -1,7 +1,7 @@
 ﻿using System.Net.WebSockets;
 using System.Text;
 
-namespace FoodOrder.Core.WebSocket
+namespace TechTuri.WebSocket
 {
     public abstract class WebSocketHandler
     {

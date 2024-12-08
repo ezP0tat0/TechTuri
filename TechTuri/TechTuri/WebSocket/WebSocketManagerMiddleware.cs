@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Net.WebSockets;
 
-namespace FoodOrder.Core.WebSocket
+namespace TechTuri.WebSocket
 {
     public class WebSocketManagerMiddleware
     {

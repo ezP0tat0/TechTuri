@@ -49,6 +49,22 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
+    "Method": "GetOneItem",
+    "RelativePath": "item/{itemID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTuri.Controllers.ItemController",
     "Method": "GetItems",
     "RelativePath": "items",
     "HttpMethod": "GET",
