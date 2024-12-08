@@ -6,7 +6,6 @@
     <script src="Scripts/auth.js"></script>
     <script src="Scripts/api.js"></script>
     <!-- <script src="Scripts/webSocket.js"></script> -->
-    <script src="Scripts/loginReg.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -24,10 +23,10 @@
     <div class="form-container">
         <h2>REGISZTRÁCIÓ</h2>
         <form class="signup-form">
-            <input type="text" placeholder="Felhasználónév" required>
-            <input type="text" placeholder="Teljes név" required>
-            <input type="password" placeholder="Jelszó" required>
-            <input type="password" placeholder="Jelszó megint" required>
+            <input type="text" id="uName" placeholder="Felhasználónév" required>
+            <input type="text" id="fullName" placeholder="Teljes név" required>
+            <input type="password" id="pw" placeholder="Jelszó" required>
+            <input type="password" id="pwAgain" placeholder="Jelszó megint" required>
             <input type="button" id="submit" value="Regisztráció" onclick="register()">
         </form>
         <div class="login-link">
