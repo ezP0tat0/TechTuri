@@ -1,21 +1,5 @@
 [
   {
-    "ContainingType": "TechTuri.Controllers.ItemController",
-    "Method": "ItemsUnderCategory",
-    "RelativePath": "{categ}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categ",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "TechTuri.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -49,8 +33,18 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
+    "Method": "GetItems",
+    "RelativePath": "api/Item",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTuri.Controllers.ItemController",
     "Method": "GetOneItem",
-    "RelativePath": "item/{itemID}",
+    "RelativePath": "api/Item/{itemID}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -65,69 +59,34 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
-    "Method": "GetItems",
-    "RelativePath": "items",
+    "Method": "ItemsUnderCategory",
+    "RelativePath": "api/Item/categ/{categ}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "categ",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
     "Method": "UploadItem",
-    "RelativePath": "UploadItem",
+    "RelativePath": "api/Item/upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "price",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "category",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "condition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "location",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "username",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pictures",
-        "Type": "System.Collections.Generic.List\u00601[[TechTuri.Model.Dtos.PictureDto, TechTuri, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
+        "Name": "item",
+        "Type": "TechTuri.Model.Dtos.ItemDto",
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

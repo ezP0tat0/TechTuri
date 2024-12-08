@@ -6,11 +6,13 @@ using TechTuri.Model;
 using TechTuri.Model.Data;
 using TechTuri.Model.Dtos;
 using TechTuri.Services;
-using static System.Net.Mime.MediaTypeNames;
+//using static System.Net.Mime.MediaTypeNames;
 
 
 namespace TechTuri.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ItemController : Controller
     {
         private readonly DataContext _context;
@@ -23,7 +25,16 @@ namespace TechTuri.Controllers
             _mapper = mapper;
             _itemService = itemService;
         }
-        [HttpGet("/items")]
+
+        [HttpPost("upload")]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> UploadItem(ItemDto item)
+        {
+            await _itemService.UploadItem(item);
+            return Ok();
+        }
+
+        [HttpGet()]
         //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemDto>))]
         public async Task<IActionResult> GetItems()
         {
@@ -41,7 +52,9 @@ namespace TechTuri.Controllers
 
             return Ok(items);
         }
-        [HttpGet("/{categ}")]
+
+
+        [HttpGet("categ/{categ}")]
         //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PagedResult<ItemSmallDto>))]
         public async Task<IActionResult> ItemsUnderCategory(string categ)//int pageSize, int pageNumber,
         {
@@ -58,7 +71,7 @@ namespace TechTuri.Controllers
             return Ok(items);
         }
 
-        [HttpGet("/item/{itemID}")]
+        [HttpGet("{itemID}")]
         public async Task<IActionResult> GetOneItem(int itemID)
         {
             var item=await _itemService.GetOneItem(itemID);
@@ -67,14 +80,7 @@ namespace TechTuri.Controllers
 
 
 
-
-        [HttpPost("/UploadItem")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IActionResult> UploadItem(ItemDto item)
-        {
-            await _itemService.UploadItem(item);
-            return Ok();
-        }
+       
 
 
         //[HttpPost("/UploadImg")]
@@ -107,9 +113,5 @@ namespace TechTuri.Controllers
 
 
 
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }

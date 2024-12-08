@@ -5,6 +5,8 @@ using TechTuri.Services;
 
 namespace TechTuri.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController : Controller
     {
         private readonly DataContext _context;
