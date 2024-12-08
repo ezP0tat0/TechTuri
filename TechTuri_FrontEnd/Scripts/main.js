@@ -32,3 +32,15 @@ function logout()
         console.error("logout error: ",error);
     }
  }
+ async function showItems() {
+    var div = document.getElementById("courses");
+
+    try {
+        const data = await getData("course");
+        console.log(data);
+        div.innerHTML = createList(data);
+    } catch (error) {
+        console.log("Adatbekérési hiba: " + error);
+        div.textContent = "Hiba történt az adatok lekérdezése során.";
+    }
+}
