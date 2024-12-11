@@ -9,6 +9,7 @@ using AutoMapper;
 using static System.Net.Mime.MediaTypeNames;
 using TechTuri.Migrations;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Hosting.Server;
 
 namespace TechTuri.Services
 {
@@ -17,16 +18,19 @@ namespace TechTuri.Services
         Task<List<ItemSmallDto>> GetItems();  //PagedResult<Item>        int pageNumber, int pageSize
         Task<List<ItemSmallDto>> GetItemsByCategory(string cat);//PagedResult<Item>        int pageNumber, int pageSize
         Task<ItemDto> GetOneItem(int itemID);
-        Task UploadItem(ItemDto item);
+       // Task UploadItem(ItemDto item);
+        Task UploadImg(IEnumerable<PictureDto> pictures);
     }
     public class ItemService : IItemService
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
-        public ItemService(DataContext context, IMapper mapper)
+        private readonly IWebHostEnvironment _env;
+        public ItemService(DataContext context, IMapper mapper, IWebHostEnvironment env)
         {
             _context = context;
             _mapper = mapper;
+            _env = env;
         }
         public async Task<List<ItemSmallDto>> GetItems() //int pageNumber,int pageSize     PagedResult<Item>
         {
@@ -80,42 +84,67 @@ namespace TechTuri.Services
 
             return item;
         }
-        public async Task UploadItem(ItemDto item)
+
+        public async Task UploadImg(IEnumerable<PictureDto> pictures)
         {
-            var uId = await _context.Users.Where(x=>x.username.Equals(item.username)).FirstOrDefaultAsync();
-            Item i = new Item()
-            {
-                name = item.name,
-                description = item.description,
-                category = item.category,
-                date = DateTime.Now,
-                price = item.price,
-                condition = item.condition,
-                location = item.location,
-                UserId =  uId.id
-            };
-            //_mapper.Map(item, i);
-            await _context.Items.AddAsync(i);
-            await _context.SaveChangesAsync();
+            Console.WriteLine("nigaaaaaaaaaaaaaaaaaa");
+            string uploadFolder = Path.Combine(_env.WebRootPath, "Pictures");
 
-            List<PictureDto> pictureList = new List<PictureDto>();
-            pictureList = item.pictures;
-
-            if (pictureList.Count > 0)
+            if (!Directory.Exists(uploadFolder))
             {
-                foreach (var picture in pictureList)
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            foreach (var file in pictures)
+            {
+                if (file != null && file.Lenght > 0)
                 {
-                   
-                    Picture p = new Picture()
-                    {
-                        imgData = ImgToBytes(picture.picture),
-                        ItemId = await _context.Items.CountAsync() + 1
-                    };
-                    await _context.Pictures.AddAsync(p);
-                    await _context.SaveChangesAsync();
+                    string fileName = Path.GetFileName(file.Name);
+                    string filePath = Path.Combine(uploadFolder, fileName);
+                    file.SaveAs=filePath; // Save each file to the specified location
                 }
             }
         }
+
+        //public async Task UploadItem(ItemDto item)
+        //{
+        //    var uId = await _context.Users.Where(x=>x.username.Equals(item.username)).FirstOrDefaultAsync();
+        //    Item i = new Item()
+        //    {
+        //        name = item.name,
+        //        description = item.description,
+        //        category = item.category,
+        //        date = DateTime.Now,
+        //        price = item.price,
+        //        condition = item.condition,
+        //        location = item.location,
+        //        UserId =  uId.id
+        //    };
+        //    //_mapper.Map(item, i);
+        //    await _context.Items.AddAsync(i);
+        //    await _context.SaveChangesAsync();
+
+        //    List<PictureDto> pictureList = new List<PictureDto>();
+        //    pictureList = item.pictures;
+
+        //    if (pictureList.Count > 0)
+        //    {
+        //        foreach (var picture in pictureList)
+        //        {
+                   
+        //            Picture p = new Picture()
+        //            {
+        //                imgData = ImgToBytes(picture.picture),
+        //                ItemId = await _context.Items.CountAsync() + 1
+        //            };
+        //            await _context.Pictures.AddAsync(p);
+        //            await _context.SaveChangesAsync();
+        //        }
+        //    }
+        //}
+
+
+
 
         private byte[] ImgToBytes(IFormFile f)
         {

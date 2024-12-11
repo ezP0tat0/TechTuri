@@ -37,7 +37,7 @@ function logout()
     try {
         const data = await getData("Item");
         console.log(data);
-        div.innerHTML = createList(data);
+        //div.innerHTML = createList(data);
     } catch (error) {
         console.log("Adatbekérési hiba: " + error);
         div.textContent = "Hiba történt az adatok lekérdezése során.";

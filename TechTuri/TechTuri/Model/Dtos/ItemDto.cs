@@ -24,7 +24,10 @@
     }
     public class PictureDto
     {
-        public IFormFile picture { get; set; }
+        public string Name { get; set; }
+        public int Lenght { get; set; }
+        public string InputStream { get; set; }
+        public string SaveAs { get; set; }
 
     }
 }
