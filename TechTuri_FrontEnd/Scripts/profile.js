@@ -20,3 +20,12 @@ function displayUserInfo()
         `${userData.joinDate}`;
     } 
 }
+function ProfileData()
+{
+    //ezeket kapod:
+    //username
+    //name
+    //joinDate
+    //adj username-t hozzá
+    
+}

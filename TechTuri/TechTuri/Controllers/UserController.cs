@@ -11,10 +11,19 @@ namespace TechTuri.Controllers
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
-        UserController(DataContext context,IMapper mapper) 
+        private readonly IUSerService _userService;
+        UserController(DataContext context,IMapper mapper, IUSerService userService) 
         {
             _context = context;
             _mapper = mapper;
+            _userService = userService;
+        }
+
+        [HttpGet("UserInfo")]
+        public async Task<IActionResult> GetUSerInfo(string uname)
+        {
+            var info = await _userService.GetUserInfo(uname);
+            return Ok(info);
         }
 
     }

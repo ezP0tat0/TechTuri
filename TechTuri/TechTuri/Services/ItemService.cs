@@ -87,7 +87,6 @@ namespace TechTuri.Services
 
         public async Task UploadImg(IEnumerable<PictureDto> pictures)
         {
-            Console.WriteLine("nigaaaaaaaaaaaaaaaaaa");
             string uploadFolder = Path.Combine(_env.WebRootPath, "Pictures");
 
             if (!Directory.Exists(uploadFolder))

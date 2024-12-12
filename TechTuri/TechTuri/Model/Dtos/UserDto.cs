@@ -20,4 +20,10 @@
         public string name { get; set; }
         public string Token { get; set; }
     }
+    public class UserInfoDto
+    {
+        public string username { get; set; }
+        public string name { get; set; }
+        public DateTime joinDate { get; set; }
+    }
 }
