@@ -10,8 +10,6 @@ function displayUserInfo()
     
     if(user)
     {
-        document.getElementById("profileData").innerHTML=
-        `</br>${userData.username} </br>`;
         document.getElementById("uName").innerHTML=
         `${userData.username}`;
         document.getElementById("fullName").innerHTML=
