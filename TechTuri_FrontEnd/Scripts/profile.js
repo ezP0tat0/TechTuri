@@ -21,9 +21,10 @@ function displayUserInfo()
 async function ProfileData() {
     try {
         const data = await getData('User/UserInfo/'+userData.username);
+        var date = data.joinDate.toLocaleDateString();
         document.getElementById('uName').textContent = data.username || '';
         document.getElementById('fullName').textContent = data.name || '';
-        document.getElementById('regDate').textContent = data.joinDate.toLocaleDateString() || '';
+        document.getElementById('regDate').textContent = date || '';
     } catch (error) {
         console.error('Error fetching profile data:', error);
     }
