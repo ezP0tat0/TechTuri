@@ -18,27 +18,18 @@ function displayUserInfo()
         `${userData.joinDate}`;
     } 
 }
-function ProfileData()
-{
-    fetch('User/UserInfo')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Failed to fetch profile data');
-        }
-        return response.json();
-    })
-    .then(data => {
+async function ProfileData() {
+    try {
+        const data = await getData('User/UserInfo');
         document.getElementById('uName').textContent = data.username || '';
         document.getElementById('fullName').textContent = data.name || '';
-        document.getElementById('regDate').textContent = data.joinDate || '';
-    })
-    .catch(error => {
+        document.getElementById('regDate').textContent = data.joinDate.toLocaleDateString() || '';
+    } catch (error) {
         console.error('Error fetching profile data:', error);
-    });
+    }
 }
 
-function ProfileDataChange()
-{
+async function ProfileDataChange() {
     const originalUsername = document.getElementById('uName').textContent || '';
     const username = document.getElementById('editUName').value || '';
     const name = document.getElementById('editName').value || '';
@@ -51,25 +42,12 @@ function ProfileDataChange()
         password: password
     };
 
-    fetch('User/ChangeInfo', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestData)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to update profile data');
-            }
-            return response.json();
-        })
-        .then(data => {
-            alert('Profile updated successfully!');
-            window.location.href = 'profile.html';
-        })
-        .catch(error => {
-            console.error('Error updating profile data:', error);
-            alert('Failed to update profile. Please try again.');
-        });
+    try {
+        const response = await postData('User/ChangeInfo', requestData);
+        alert('Profile updated successfully!');
+        window.location.href = 'profile.html';
+    } catch (error) {
+        console.error('Error updating profile data:', error);
+        alert('Failed to update profile. Please try again.');
+    }
 }
