@@ -39,19 +39,27 @@ async function postItem()
         category: category,
         condition: cond,
         location: address,
-        username: userData.username,
-        pictures: pictures
+        username: userData.username
     };
     console.log(data);
     await postData("Item/upload", data, false)
         .then(async (response) => {
-            if (response.success) {
-                alert('Sikeres hirdetés feladás!');
-                window.location.href = "index.html";
-            } else {
+            if (!response.success) {
                 alert(await response.message || 'Hiba történt a hirdetés feladása során!');
             }
         });
+    var data2 = {
+        pictures: pictures
+    };
+    await postData("Item/pictures", data2, false)
+    .then(async (response) => {
+        if (response.success) {
+            alert('Sikeres hirdetés feladás!');
+            window.location.href = "index.html";
+        } else {
+            alert(await response.message || 'Hiba történt a hirdetés feladása során!');
+        }
+    });
  }
  function isEmpty(str) {
     return (!str || 0 === str.length);
