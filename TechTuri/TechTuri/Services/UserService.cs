@@ -43,7 +43,6 @@ namespace TechTuri.Services
                 user.pwHash = psHash;
                 user.pwSalt = pwSalt;
             }
-
             await _context.SaveChangesAsync();
         }
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

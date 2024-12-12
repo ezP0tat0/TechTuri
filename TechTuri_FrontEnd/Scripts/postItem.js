@@ -13,7 +13,7 @@ async function postItem()
     const pictures = new FormData();
     const picturesInput = document.getElementById("pictures");
     for (let i = 0; i < picturesInput.files.length; i++) {
-        formData.append("pictures", picturesInput.files[i]);
+        pictures.append("pictures", picturesInput.files[i]);
     }
 
     for (var i = 0; i < categories.length; i++) {
@@ -41,6 +41,7 @@ async function postItem()
         location: address,
         username: userData.username
     };
+     JSON.stringify(data);
     console.log(data);
     await postData("Item/upload", data, false)
         .then(async (response) => {
@@ -51,16 +52,16 @@ async function postItem()
     var data2 = {
         pictures: pictures
     };
-    await postData("Item/pictures", data2, false)
-    .then(async (response) => {
-        if (response.success) {
-            alert('Sikeres hirdetés feladás!');
-            window.location.href = "index.html";
-        } else {
-            alert(await response.message || 'Hiba történt a hirdetés feladása során!');
-        }
+     const response = await fetch("http://localhost:5263/api/Item/pictures", {
+        method: "POST",
+        body: data2
     });
+
+    const result = await response.json();
+    console.log(result);
+     
  }
  function isEmpty(str) {
     return (!str || 0 === str.length);
 }
+

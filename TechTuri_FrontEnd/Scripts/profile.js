@@ -16,7 +16,7 @@ function formatDate(date) {
     if (day.length < 2) 
         day = '0' + day;
 
-    return [year, month, day].join('-');
+    return [year, month, day].join('.');
 }
 async function ProfileData() {
     try {

@@ -58,11 +58,14 @@ namespace TechTuri.Controllers
         }
 
         [HttpPost("pictures")]
-        public async Task<IActionResult> UploadPictures(IEnumerable<PictureDto> uploadedFiles)
+        public async Task<IActionResult> UploadPictures(List<IFormFile> files)
         {
-           await _itemService.UploadImg(uploadedFiles);
 
-            return Ok();
+            if (files == null || files.Count == 0)
+                return BadRequest("No files uploaded."); 
+            await _itemService.UploadImg(files);
+
+            return Ok(new { Message = "Files uploaded successfully!" });
         }
         [HttpPost("upload")]
         public async Task<IActionResult> UploadItem(ItemDto i)
