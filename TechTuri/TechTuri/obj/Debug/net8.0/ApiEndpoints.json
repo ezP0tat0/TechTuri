@@ -91,6 +91,22 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.UserController",
+    "Method": "ChangeInfo",
+    "RelativePath": "api/User/ChangeInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uc",
+        "Type": "TechTuri.Model.Dtos.UserInfoChangeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTuri.Controllers.UserController",
     "Method": "GetUSerInfo",
     "RelativePath": "api/User/UserInfo",
     "HttpMethod": "GET",

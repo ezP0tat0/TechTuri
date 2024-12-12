@@ -30,7 +30,7 @@ namespace TechTuri.Controllers
         [HttpPost("ChangeInfo")]
         public async Task<IActionResult> ChangeInfo(UserInfoChangeDto uc)
         {
-
+            await _userService.InfoChange(uc);
             return Ok();
         }
 

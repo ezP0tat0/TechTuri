@@ -22,6 +22,8 @@ function displayUserInfo()
 }
 function ProfileData()
 {
+    //elérés: User/UserInfo
+    
     //ezeket kapod:
     //username
     //name
@@ -33,6 +35,8 @@ function ProfileData()
 
 function ProfileDataChange()
 {
+    //elérés:  User/ChangeInfo
+    
     //adj:
     //originalUsername
     //username
