@@ -10,8 +10,6 @@ function displayUserInfo()
     
     if(user)
     {
-        document.getElementById("profileData").innerHTML=
-        `</br>${userData.username} </br>`;
         document.getElementById("uName").innerHTML=
         `${userData.username}`;
         document.getElementById("fullName").innerHTML=
@@ -22,25 +20,56 @@ function displayUserInfo()
 }
 function ProfileData()
 {
-    //elérés: User/UserInfo
-    
-    //ezeket kapod:
-    //username
-    //name
-    //joinDate
-    
-    //adj username-t hozzá
-    
+    fetch('User/UserInfo')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to fetch profile data');
+        }
+        return response.json();
+    })
+    .then(data => {
+        document.getElementById('uName').textContent = data.username || '';
+        document.getElementById('fullName').textContent = data.name || '';
+        document.getElementById('regDate').textContent = data.joinDate || '';
+    })
+    .catch(error => {
+        console.error('Error fetching profile data:', error);
+    });
 }
 
 function ProfileDataChange()
 {
-    //elérés:  User/ChangeInfo
-    
-    //adj:
-    //originalUsername
-    //username
-    //name
-    //password
-    //ha valami üres az legyen 0 hosszú string 
+    const originalUsername = document.getElementById('uName').textContent || '';
+    const username = document.getElementById('editUName').value || '';
+    const name = document.getElementById('editName').value || '';
+    const password = document.getElementById('editPw').value || '';
+
+    const requestData = {
+        originalUsername: originalUsername,
+        username: username,
+        name: name,
+        password: password
+    };
+
+    fetch('User/ChangeInfo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to update profile data');
+            }
+            return response.json();
+        })
+        .then(data => {
+            alert('Profile updated successfully!');
+            window.location.href = 'profile.html';
+        })
+        .catch(error => {
+            console.error('Error updating profile data:', error);
+            alert('Failed to update profile. Please try again.');
+        });
 }

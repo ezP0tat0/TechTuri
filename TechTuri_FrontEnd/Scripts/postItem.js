@@ -9,7 +9,13 @@ async function postItem()
     var categories = document.getElementsByName('category');
     var conds = document.getElementsByName('cond');
     var desc = document.getElementById('itemDesc').value;
-    var pictures = document.getElementById('pictures').value;
+
+    const pictures = new FormData();
+    const picturesInput = document.getElementById("pictures");
+    for (let i = 0; i < picturesInput.files.length; i++) {
+        formData.append("pictures", picturesInput.files[i]);
+    }
+
     for (var i = 0; i < categories.length; i++) {
         if (categories[i].checked) {
           var category = categories[i].value;
