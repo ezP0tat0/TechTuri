@@ -90,6 +90,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TechTuri.Controllers.ItemController",
+    "Method": "UploadItem",
+    "RelativePath": "api/Item/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "i",
+        "Type": "TechTuri.Model.Dtos.ItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TechTuri.Controllers.UserController",
     "Method": "ChangeInfo",
     "RelativePath": "api/User/ChangeInfo",

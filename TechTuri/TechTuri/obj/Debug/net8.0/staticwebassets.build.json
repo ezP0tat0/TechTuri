@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "EFC8dfn1HfzjVlQDvLgj9YQJ9mXBx9qP6wHUYL3uh2g=",
+  "Hash": "qWiUB505juncqHd9r8aQzCJeZej/2fA88kw1XAtaGLQ=",
   "Source": "TechTuri",
   "BasePath": "_content/TechTuri",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
