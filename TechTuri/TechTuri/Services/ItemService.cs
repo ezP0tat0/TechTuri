@@ -19,7 +19,7 @@ namespace TechTuri.Services
         Task<List<ItemSmallDto>> GetItemsByCategory(string cat);//PagedResult<Item>        int pageNumber, int pageSize
         Task<ItemDto> GetOneItem(int itemID);
         Task UploadItem(ItemDto item);
-        Task UploadImg(IEnumerable<PictureDto> pictures);
+        Task UploadImg(List<IFormFile> pictures);
     }
     public class ItemService : IItemService
     {
@@ -36,18 +36,7 @@ namespace TechTuri.Services
         {
             var items = await _context.Items.ToListAsync();
             List<ItemSmallDto> result = new List<ItemSmallDto>();
-            foreach (var item in items)
-            {
-                var firstImg = await _context.Pictures.Where(x => x.id == item.id).FirstOrDefaultAsync();
-                result.Add(new ItemSmallDto()
-                {
-                    id = item.id,
-                    name = item.name,
-                    price = item.price,
-                    location = item.location,
-                    image = BytesToImg(firstImg.imgData)
-                });
-            }
+            
             //var items = await _context.Items.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
             //var result = items.Create(await _context.Items.CountAsync(), pageNumber, pageSize);
             return result;
@@ -61,15 +50,6 @@ namespace TechTuri.Services
             List<ItemSmallDto> result = new List<ItemSmallDto>();
             foreach (var item in items)
             {
-                var firstImg = await _context.Pictures.Where(x => x.id == item.id).FirstOrDefaultAsync();
-                result.Add(new ItemSmallDto()
-                {
-                    id = item.id,
-                    name = item.name,
-                    price = item.price,
-                    location = item.location,
-                    image = BytesToImg(firstImg.imgData) 
-                });
             }
 
             return result;
@@ -85,24 +65,38 @@ namespace TechTuri.Services
             return item;
         }
 
-        public async Task UploadImg(IEnumerable<PictureDto> pictures)
+        public async Task UploadImg(List<IFormFile> pictures)
         {
-            string uploadFolder = Path.Combine(_env.WebRootPath, "Pictures");
 
-            if (!Directory.Exists(uploadFolder))
+            string uploadPath = Path.Combine(AppContext.BaseDirectory, "UploadedImages");
+            Console.WriteLine($"Upload path: {uploadPath}");
+
+            if (!Directory.Exists(uploadPath))
             {
-                Directory.CreateDirectory(uploadFolder);
+                Console.WriteLine("Directory does not exist, creating it...");
+                Directory.CreateDirectory(uploadPath);
             }
 
             foreach (var file in pictures)
             {
-                if (file != null && file.Lenght > 0)
+                if (file.Length > 0)
                 {
-                    string fileName = Path.GetFileName(file.Name);
-                    string filePath = Path.Combine(uploadFolder, fileName);
-                    file.SaveAs=filePath; // Save each file to the specified location
+                    string uniqueFileName = $"{Guid.NewGuid()}_{file.FileName}";
+                    string filePath = Path.Combine(uploadPath, uniqueFileName);
+
+                    try
+                    {
+                        Console.WriteLine($"Saving file: {filePath}");
+                        await using var stream = new FileStream(filePath, FileMode.Create);
+                        await file.CopyToAsync(stream);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error saving file: {ex.Message}");
+                    }
                 }
             }
+
         }
 
         public async Task UploadItem(ItemDto item)

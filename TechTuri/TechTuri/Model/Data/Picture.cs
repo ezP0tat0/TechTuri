@@ -5,7 +5,7 @@ namespace TechTuri.Model.Data
     public class Picture
     {
         public int id { get; set; }
-        public byte[] imgData { get; set; }
+        public string filePath { get; set; }
 
         [ForeignKey("ItemId")]
         public int ItemId { get; set; }

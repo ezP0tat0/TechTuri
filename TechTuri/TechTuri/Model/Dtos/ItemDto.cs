@@ -9,8 +9,7 @@
         public string condition { get; set; }
         public string location { get; set; }
         //public DateTime date { get; set; }
-        public int username { get; set; }
-        public List<PictureDto> pictures { get; set; }
+        public string username { get; set; }
     }
 
     public class ItemSmallDto
