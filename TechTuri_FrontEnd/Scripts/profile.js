@@ -18,3 +18,27 @@ function displayUserInfo()
         `${userData.joinDate}`;
     } 
 }
+function ProfileData()
+{
+    //elérés: User/UserInfo
+    
+    //ezeket kapod:
+    //username
+    //name
+    //joinDate
+    
+    //adj username-t hozzá
+    
+}
+
+function ProfileDataChange()
+{
+    //elérés:  User/ChangeInfo
+    
+    //adj:
+    //originalUsername
+    //username
+    //name
+    //password
+    //ha valami üres az legyen 0 hosszú string 
+}

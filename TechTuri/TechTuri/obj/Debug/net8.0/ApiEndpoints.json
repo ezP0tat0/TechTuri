@@ -75,16 +75,48 @@
   },
   {
     "ContainingType": "TechTuri.Controllers.ItemController",
-    "Method": "UploadItem",
-    "RelativePath": "api/Item/upload",
+    "Method": "UploadPictures",
+    "RelativePath": "api/Item/pictures",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "item",
-        "Type": "TechTuri.Model.Dtos.ItemDto",
+        "Name": "uploadedFiles",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TechTuri.Model.Dtos.PictureDto, TechTuri, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTuri.Controllers.UserController",
+    "Method": "ChangeInfo",
+    "RelativePath": "api/User/ChangeInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uc",
+        "Type": "TechTuri.Model.Dtos.UserInfoChangeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechTuri.Controllers.UserController",
+    "Method": "GetUSerInfo",
+    "RelativePath": "api/User/UserInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uname",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

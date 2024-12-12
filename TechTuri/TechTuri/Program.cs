@@ -23,6 +23,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IAuthService,AuthService>();
 builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddWebSocketManager();
 
