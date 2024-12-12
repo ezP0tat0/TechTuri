@@ -5,27 +5,27 @@ window.onload=function()
 {
     ProfileData();
 }
-function displayUserInfo()
-{
-    
-    if(user)
-    {
-        document.getElementById("uName").innerHTML=
-        `${userData.username}`;
-        document.getElementById("fullName").innerHTML=
-        `${userData.name}`;
-        document.getElementById("regDate").innerHTML=
-        `${userData.joinDate}`;
-    } 
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
 }
 async function ProfileData() {
     try {
         const data = await getData('User/UserInfo/'+userData.username);
-         var d=Date(data.joinDate);
+        var d=Date(data.joinDate);
         console.log(d);
         document.getElementById('uName').textContent = data.username || '';
         document.getElementById('fullName').textContent = data.name || '';
-        document.getElementById('regDate').textContent = d || '';
+        document.getElementById('regDate').textContent = formatDate(d) || '';
     } catch (error) {
         console.error('Error fetching profile data:', error);
     }
