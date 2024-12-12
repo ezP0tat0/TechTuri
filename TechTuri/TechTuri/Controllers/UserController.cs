@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using TechTuri.Model;
 using TechTuri.Services;
-
+using TechTuri.Model.Dtos;
+using TechTuri.Model.Data;
 namespace TechTuri.Controllers
 {
     [Route("api/[controller]")]
@@ -11,8 +12,8 @@ namespace TechTuri.Controllers
     {
         private readonly DataContext _context;
         private readonly IMapper _mapper;
-        private readonly IUSerService _userService;
-        UserController(DataContext context,IMapper mapper, IUSerService userService) 
+        private readonly IUserService _userService;
+        public UserController(DataContext context, IMapper mapper, IUserService userService)
         {
             _context = context;
             _mapper = mapper;
@@ -24,6 +25,13 @@ namespace TechTuri.Controllers
         {
             var info = await _userService.GetUserInfo(uname);
             return Ok(info);
+        }
+
+        [HttpPost("ChangeInfo")]
+        public async Task<IActionResult> ChangeInfo(UserInfoChangeDto uc)
+        {
+
+            return Ok();
         }
 
     }

@@ -26,6 +26,17 @@ function ProfileData()
     //username
     //name
     //joinDate
+    
     //adj username-t hozzá
     
+}
+
+function ProfileDataChange()
+{
+    //adj:
+    //originalUsername
+    //username
+    //name
+    //password
+    //ha valami üres az legyen 0 hosszú string 
 }

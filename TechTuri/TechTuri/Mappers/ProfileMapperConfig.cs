@@ -18,6 +18,7 @@ namespace TechTuri.Mappers
         {
             CreateMap<ItemDto, Item>();
             CreateMap<Item, ItemDto>();
+            CreateMap<User,UserInfoDto>();
         }
     }
 }

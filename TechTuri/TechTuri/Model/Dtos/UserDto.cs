@@ -8,7 +8,7 @@
     public class LoginDto : UserDto
     {
     }
-    public class RegisterDto:UserDto
+    public class RegisterDto : UserDto
     {
         public string name { get; set; }
 
@@ -16,7 +16,7 @@
     }
     public class AuthResponseDto
     {
-        public string username{ get; set; }
+        public string username { get; set; }
         public string name { get; set; }
         public string Token { get; set; }
     }
@@ -25,5 +25,12 @@
         public string username { get; set; }
         public string name { get; set; }
         public DateTime joinDate { get; set; }
+    }
+    public class UserInfoChangeDto
+    {
+        public string originalUsername { get; set; }
+        public string username { get; set; }
+        public string name { get; set; }
+        public string password { get; set; }
     }
 }
