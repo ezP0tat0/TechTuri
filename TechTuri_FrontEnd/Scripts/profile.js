@@ -46,10 +46,10 @@ async function ProfileDataChange() {
 
     try {
         const response = await postData('User/ChangeInfo', requestData);
-        alert('Profile updated successfully!');
+        alert('Sikeresen frissítette az adato(ka)t!');
         window.location.href = 'profile.html';
     } catch (error) {
         console.error('Error updating profile data:', error);
-        alert('Failed to update profile. Please try again.');
+        alert('Sikertelen mentés. Kérjük próbálja újra!');
     }
 }
