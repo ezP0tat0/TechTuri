@@ -108,7 +108,7 @@
   {
     "ContainingType": "TechTuri.Controllers.UserController",
     "Method": "GetUSerInfo",
-    "RelativePath": "api/User/UserInfo",
+    "RelativePath": "api/User/UserInfo/{uname}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -116,7 +116,7 @@
       {
         "Name": "uname",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

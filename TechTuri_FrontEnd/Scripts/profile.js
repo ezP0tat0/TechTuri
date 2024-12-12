@@ -20,7 +20,7 @@ function displayUserInfo()
 }
 async function ProfileData() {
     try {
-        const data = await getData('User/UserInfo');
+        const data = await getData('User/UserInfo/'+userData.username);
         document.getElementById('uName').textContent = data.username || '';
         document.getElementById('fullName').textContent = data.name || '';
         document.getElementById('regDate').textContent = data.joinDate.toLocaleDateString() || '';

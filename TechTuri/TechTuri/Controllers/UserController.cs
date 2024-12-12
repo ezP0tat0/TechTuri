@@ -20,7 +20,7 @@ namespace TechTuri.Controllers
             _userService = userService;
         }
 
-        [HttpGet("UserInfo")]
+        [HttpGet("UserInfo/{uname}")]
         public async Task<IActionResult> GetUSerInfo(string uname)
         {
             var info = await _userService.GetUserInfo(uname);
