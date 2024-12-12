@@ -64,41 +64,20 @@ namespace TechTuri.Controllers
 
             return Ok();
         }
+        [HttpPost("upload")]
+        public async Task<IActionResult> UploadItem(ItemDto i)
+        {
+            await _itemService.UploadItem(i);
+
+            return Ok();
+        }
 
 
 
        
 
 
-        //[HttpPost("/UploadImg")]
-        //public async Task<IActionResult> UploadImg(IFormFile image)
-        //{
-        //    if (image == null || image.Length == 0)
-        //    {
-        //        return BadRequest("No file selected.");
-        //    }
-
-        //    byte[] imgBytes;
-
-        //    using (var memoryStream = new MemoryStream())
-        //    {
-        //        await image.CopyToAsync(memoryStream);
-        //        imgBytes = memoryStream.ToArray();
-        //    }
-        //    img im = new img()
-        //    {
-        //        id = 1,
-        //        imgData = imgBytes
-        //    };
-        //    await _context.imgs.AddAsync(im);
-        //    await _context.SaveChangesAsync();
-
-
-
-        //        return Ok();
-        //}
-
-
+        //[HttpPost("/U
 
     }
 }

@@ -18,7 +18,7 @@ namespace TechTuri.Services
         Task<List<ItemSmallDto>> GetItems();  //PagedResult<Item>        int pageNumber, int pageSize
         Task<List<ItemSmallDto>> GetItemsByCategory(string cat);//PagedResult<Item>        int pageNumber, int pageSize
         Task<ItemDto> GetOneItem(int itemID);
-       // Task UploadItem(ItemDto item);
+        Task UploadItem(ItemDto item);
         Task UploadImg(IEnumerable<PictureDto> pictures);
     }
     public class ItemService : IItemService
@@ -105,42 +105,23 @@ namespace TechTuri.Services
             }
         }
 
-        //public async Task UploadItem(ItemDto item)
-        //{
-        //    var uId = await _context.Users.Where(x=>x.username.Equals(item.username)).FirstOrDefaultAsync();
-        //    Item i = new Item()
-        //    {
-        //        name = item.name,
-        //        description = item.description,
-        //        category = item.category,
-        //        date = DateTime.Now,
-        //        price = item.price,
-        //        condition = item.condition,
-        //        location = item.location,
-        //        UserId =  uId.id
-        //    };
-        //    //_mapper.Map(item, i);
-        //    await _context.Items.AddAsync(i);
-        //    await _context.SaveChangesAsync();
-
-        //    List<PictureDto> pictureList = new List<PictureDto>();
-        //    pictureList = item.pictures;
-
-        //    if (pictureList.Count > 0)
-        //    {
-        //        foreach (var picture in pictureList)
-        //        {
-                   
-        //            Picture p = new Picture()
-        //            {
-        //                imgData = ImgToBytes(picture.picture),
-        //                ItemId = await _context.Items.CountAsync() + 1
-        //            };
-        //            await _context.Pictures.AddAsync(p);
-        //            await _context.SaveChangesAsync();
-        //        }
-        //    }
-        //}
+        public async Task UploadItem(ItemDto item)
+        {
+            var uId = await _context.Users.Where(x => x.username.Equals(item.username)).FirstOrDefaultAsync();
+            Item i = new Item()
+            {
+                name = item.name,
+                description = item.description,
+                category = item.category,
+                date = DateTime.Now,
+                price = item.price,
+                condition = item.condition,
+                location = item.location,
+                UserId = uId.id
+            };
+            await _context.Items.AddAsync(i);
+            await _context.SaveChangesAsync();
+        }
 
 
 
