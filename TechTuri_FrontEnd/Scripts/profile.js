@@ -3,7 +3,7 @@ var userData=JSON.parse(user);
 
 window.onload=function()
 {
-    displayUserInfo();
+    ProfileData();
 }
 function displayUserInfo()
 {
